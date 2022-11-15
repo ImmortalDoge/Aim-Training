@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aim Training</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Aim Training</h1>
+      <p>Time:</p>
+      <ul id="time-list" class="time-list">
+        <li>
+          <input type="radio" name="time" class="time-btn" value="10" checked />
+          <label for="10">10 sec</label>
+        </li>
+        <li>
+          <input type="radio" name="time" class="time-btn" value="20" />
+          <label for="20">20 sec</label>
+        </li>
+        <li>
+          <input type="radio" name="time" class="time-btn" value="30" />
+          <label for="30">30 sec</label>
+        </li>
+        <li>
+          <input type="radio" name="time" class="time-btn" value="60" />
+          <label for="60">60 sec</label>
+        </li>
+      </ul>
+      <p>Diffuclty:</p>
+      <ul id="diff-list" class="diff-list">
+        <li>
+          <input type="radio" name="diff" class="diff-btn" value="easy" />
+          <label for="easy">Easy</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="diff"
+            class="diff-btn"
+            value="medium"
+            checked
+          />
+          <label for="medium">Memdium</label>
+        </li>
+        <li>
+          <input type="radio" name="diff" class="diff-btn" value="hard" />
+          <label for="hard">Hard</label>
+        </li>
+        <li>
+          <input type="radio" name="diff" class="diff-btn" value="very_hard" />
+          <label for="very_hard">Very-very hard!</label>
+        </li>
+      </ul>
+      <p>Board Size:</p>
+      <ul id="board_size-list" class="board_size-list">
+        <li>
+          <input type="radio" name="size" class="size-btn" value="small" />
+          <label for="small">Small</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="size"
+            class="size-btn"
+            value="big"
+            checked
+          />
+          <label for="big">Big</label>
+        </li>
+        <li>
+          <input type="radio" name="size" class="size-btn" value="huge" />
+          <label for="huge">Huge</label>
+        </li>
+      </ul>
+      <button id="start" class="start">Start training</button>
+    </div>
+
+    <div class="screen">
+      <h3>Remain: <span id="time">00:00</span></h3>
+      <div class="board" id="board"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
